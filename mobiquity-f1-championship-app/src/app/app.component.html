@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div *ngFor="let champion of worldChampions.MRData.StandingsTable.StandingsLists">
+          Name: {{champion.DriverStandings[0].Driver.givenName}}
+          Last Name: {{champion.DriverStandings[0].Driver.familyName}}
+      </div>
+    </div>
+  </div>
+</div>
