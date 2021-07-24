@@ -1,9 +1,59 @@
+<div class="component--header">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <img src="../assets/mobiquity-logo-white.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="container">
-  <div class="row">
-    <div class="col-12">
-      <div *ngFor="let champion of worldChampions.MRData.StandingsTable.StandingsLists">
-          Name: {{champion.DriverStandings[0].Driver.givenName}}
-          Last Name: {{champion.DriverStandings[0].Driver.familyName}}
+
+  <h1>Formula 1 World Champions </h1>
+  <div class="row mt-5 mb-5">
+    <div class="col-12 col-lg-3 " *ngFor="let champion of worldChampions.MRData.StandingsTable.StandingsLists">
+      <div class="component__card--wrapper">
+        <img src="../assets/{{champion.DriverStandings[0].Constructors[0].constructorId}}.png" alt="Fernando">
+        <div class="component__card--copy" (click)="getWinnersOfSelectedYear('2012')">
+          <h4>World champions of {{champion.season}}</h4>
+          <small class="component__card--copy-bold">{{champion.DriverStandings[0].Driver.givenName}} {{champion.DriverStandings[0].Driver.familyName}}</small>
+          <small> is the champion of </small>
+          <small class="component__card--copy-bold">{{champion.season}}</small>
+          <small> season along side</small>
+          <small class="component__card--copy-bold"> {{champion.DriverStandings[0].Constructors[0].name}} </small>
+          <small> constructor </small>
+          <a href="#">
+            <button>Read More</button>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="row component--wrapper"> <!--*ngFor="let champion of worldChampions.MRData.StandingsTable.StandingsLists" -->
+    <div class="col-12 col-lg-6">
+      <img src="../assets/Fernando.png" alt="Fernando">
+    </div>
+    <div class="col-12 col-lg-4">
+      <div (click)="getWinnersOfSelectedYear('2012')">
+        <h4>World champions of 2015</h4>
+        <small>Renault - Moshe Lesejane</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="row component--wrapper"> <!--*ngFor="let champion of worldChampions.MRData.StandingsTable.StandingsLists" -->
+    <div class="col-12 col-lg-6">
+      <img src="../assets/Redbull.png" alt="Fernando">
+    </div>
+    <div class="col-12 col-lg-4">
+      <div (click)="getWinnersOfSelectedYear('2012')">
+        <h4>World champions of 2015</h4>
+        <small>Renault - Moshe Lesejane</small>
       </div>
     </div>
   </div>
