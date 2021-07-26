@@ -55,8 +55,12 @@
   }
   /*Avatar image styling - driver image*/
   &__avatar{
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
+    @media (min-width: 768px) {
+      height: 100px;
+      width: 100px;
+    }
     border-radius: 50%;
   }
   /*button styling*/
