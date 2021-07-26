@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpParams} from '@angular/common/http';
-import {WorldChampions} from "./models/worldChampions";
-import {WinnersOfTheYear} from "./models/winnersOfTheYear";
+import {WorldChampions} from "../models/worldChampions";
+import {WinnersOfTheYear} from "../models/winnersOfTheYear";
 @Injectable({
   providedIn: 'root'
 })
