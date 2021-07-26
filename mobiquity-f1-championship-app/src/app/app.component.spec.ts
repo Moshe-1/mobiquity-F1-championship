@@ -28,8 +28,7 @@ describe('AppComponent', () => {
     fixture.destroy();
   });
 
-  it('should create', () => {
-
+ it('should create', () => {
     expect(component).toBeTruthy();
   });
 

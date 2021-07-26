@@ -11,14 +11,12 @@ import {trigger,state,style,animate,transition} from '@angular/animations';
   animations: [
     trigger('openClose', [
       // ...
-      state('open', style({
-      })),
       state('closed', style({
 
         display: 'none'
       })),
       transition('open => closed', [
-        animate('1s')
+        animate('0.5s')
       ]),
       transition('closed => open', [
         animate('0.5s')
@@ -45,7 +43,7 @@ export class AppComponent {
     this.championshipServicesService.getWorldChampions().subscribe((response: WorldChampions) => {
       //assigning local variable value the json response
       this.worldChampions = response;
-      //Hide the loader when API call came back succesfull
+      //Hide the loader when API call came back successful
       this.isLoading = false ;
     }, error => {
         //this.isLoading = false;

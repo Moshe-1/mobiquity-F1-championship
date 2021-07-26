@@ -15,5 +15,10 @@ describe('MobiquityF1ChampionshipServicesService', () => {
     service = TestBed.inject(MobiquityF1ChampionshipServicesService);
   });
 
-
+  it('should use MobiquityF1ChampionshipServicesService to get world Champions', () => {
+    expect(service.getWorldChampions()).toBeTruthy();
+  });
+  it('should use MobiquityF1ChampionshipServicesService to get selected winners of the season ', () => {
+    expect(service.getWinnersOfSelectedYear('2015')).toBeTruthy();
+  });
 });
