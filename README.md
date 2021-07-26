@@ -18,16 +18,34 @@ in this case the app will know which correct image to present based on the API r
 When clicking on the card we pass the season year of the selected card to get race winners of the season, and I highlight the season winner.
 I'm listing as much important data and list race winners avatars next to them(Everything happens dynamically)
 
-## Checkout project
-**To check out the project open git bash or terminal and run the following command**
+## Download and install node
 
-`git clone https://github.com/Moshe-1/mobiquity-F1-championship.git
-`
+Follow instruction from here [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+
+If you already have node skip this step
+
+## Download and install git
+
+Follow instruction from here [https://git-scm.com/downloads](https://git-scm.com/downloads)
+
+If you already have git skip this step
+
+
 ## Installing Node modules
 
 Within the project folder structure go to 'mobiquity-f1-championship-app' directory and and open git bash.
 Run `npm install` this is to install node modules.
 
+## Installing angular CLI
+
+open git bash and run `npm i -g @angular/cli`
+If you already have angular CLI installed globally skip this step
+
+## Checkout project
+**To check out the project open git bash or terminal and run the following command**
+
+`git clone https://github.com/Moshe-1/mobiquity-F1-championship.git
+`
 
 ## Development server
 
@@ -43,9 +61,12 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
+
 ## A big thanks to:
 
 `Angular CLI`
+
+`NPM`
 
 `Karma`
 

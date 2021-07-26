@@ -1,10 +1,11 @@
+<!--world champions container-->
 <div class="container" [@openClose]="!isShown ? 'open' : 'closed'">
 
   <h1>Formula 1 World Champions </h1>
   <div class="row mt-5 mb-5">
     <div class="col-12 col-lg-3 " (click)="toggleShow()"  *ngFor="let champion of worldChampions.MRData.StandingsTable.StandingsLists">
       <div class="champions__card champions__card--wrapper" (click)="getWinnersOfSelectedYear(champion.season, champion.DriverStandings[0].Driver.driverId)">
-        <img src="../assets/{{champion.DriverStandings[0].Constructors[0].constructorId}}.png" alt="Fernando">
+        <img src="../assets/constructors/{{champion.DriverStandings[0].Constructors[0].constructorId}}.png" alt="Fernando">
         <div class="champions__card--copy">
           <h4>World champions of {{champion.season}}</h4>
           <small class="champions__card--copy-bold">{{champion.DriverStandings[0].Driver.givenName}} {{champion.DriverStandings[0].Driver.familyName}}</small>
@@ -22,7 +23,9 @@
   </div>
 </div>
 
-<div class="container" *ngIf="isShown" [@openClose]="isShown ? 'open' : 'closed'">
+
+<!--winner of the selected season container-->
+<div class="container champions" *ngIf="isShown" [@openClose]="isShown ? 'open' : 'closed'">
   <h1>Formula 1 {{selectedYear}} Season winners </h1>
   <div class="champions__button--wrapper">
     <button (click)="toggleShow()" class="champions__button">Back</button>
