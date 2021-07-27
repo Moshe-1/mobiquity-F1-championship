@@ -30,22 +30,24 @@ Follow instruction from here [https://git-scm.com/downloads](https://git-scm.com
 
 If you already have git skip this step
 
+## Checkout project
+**To check out the project open git bash or terminal and run the following command**
 
-## Installing Node modules
-
-Within the project folder structure go to 'mobiquity-f1-championship-app' directory and and open git bash.
-Run `npm install` this is to install node modules.
+`git clone https://github.com/Moshe-1/mobiquity-F1-championship.git
+`
 
 ## Installing angular CLI
 
 open git bash and run `npm i -g @angular/cli`
 If you already have angular CLI installed globally skip this step
 
-## Checkout project
-**To check out the project open git bash or terminal and run the following command**
 
-`git clone https://github.com/Moshe-1/mobiquity-F1-championship.git
-`
+## Installing Node modules
+
+Within the project folder structure go to 'mobiquity-f1-championship-app' directory and and open git bash.
+Run `npm install` this is to install node modules.
+
+
 
 ## Development server
 
