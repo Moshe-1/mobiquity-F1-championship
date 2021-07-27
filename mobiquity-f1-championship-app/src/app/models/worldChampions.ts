@@ -1,4 +1,6 @@
-//Created WorldChampions interface to match up the response when expecting from the API. This is for scalability and reusability
+/**
+ * @description Created WorldChampions interface to match up the response when expecting from the API. This is for scalability and reusability
+ */
 export interface WorldChampions {
   MRData: {
     StandingsTable:{
@@ -31,7 +33,6 @@ export interface WorldChampions {
                 }
               ]
             }
-
           ]
         }
       ]

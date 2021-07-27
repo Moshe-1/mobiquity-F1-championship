@@ -1,6 +1,5 @@
 <!--world champions container-->
 <div class="container" [@openClose]="!isShown ? 'open' : 'closed'">
-
   <h1>Formula 1 World Champions </h1>
   <div class="row mt-5 mb-5">
     <div class="col-12 col-lg-3 " (click)="toggleShow()"  *ngFor="let champion of worldChampions.MRData.StandingsTable.StandingsLists">
@@ -23,10 +22,9 @@
   </div>
 </div>
 
-
 <!--winner of the selected season container-->
 <div class="container champions" *ngIf="isShown" [@openClose]="isShown ? 'open' : 'closed'">
-  <h1>Formula 1 {{selectedYear}} Season winners </h1>
+  <h1>{{selectedYear}} Season winners </h1>
   <div class="champions__button--wrapper">
     <button (click)="toggleShow()" class="champions__button">Back</button>
   </div>
@@ -49,26 +47,9 @@
       <div class="col-3">
         <img class="champions__avatar" src="../assets/drivers/{{winner.Results[0].Driver.driverId}}.png"  alt="">
       </div>
-      <div class="col-3">{{winner.Results[0].Driver.familyName}} {{winner.Results[0].Driver.givenName}}</div>
+      <div class="col-3">{{winner.Results[0].Driver.givenName}} {{winner.Results[0].Driver.familyName}}</div>
       <div class="col-3">{{winner.Results[0].Constructor.name}}</div>
       <div class="col-3">{{winner.raceName}}</div>
     </div>
   </div>
 </div>
-
-<!--Place holders while waiting for API response-->
-<!--<div class="ph-item">
-  <div class="ph-col-12">
-    <div class="ph-picture"></div>
-    <div class="ph-row">
-      <div class="ph-col-6 big"></div>
-      <div class="ph-col-4 empty big"></div>
-      <div class="ph-col-2 big"></div>
-      <div class="ph-col-4"></div>
-      <div class="ph-col-8 empty"></div>
-      <div class="ph-col-6"></div>
-      <div class="ph-col-6 empty"></div>
-      <div class="ph-col-12"></div>
-    </div>
-  </div>
-</div>-->

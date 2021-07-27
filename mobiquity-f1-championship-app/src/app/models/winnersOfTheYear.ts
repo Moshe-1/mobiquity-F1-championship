@@ -1,4 +1,6 @@
-//Created WinnersOfTheYear interface to match up the response when expecting from the API. This is for scalability and reusability
+/**
+ * @description Created WinnersOfTheYear interface to match up the response when expecting from the API. This is for scalability and reusability
+ */
 export interface WinnersOfTheYear {
   MRData: {
     RaceTable: {

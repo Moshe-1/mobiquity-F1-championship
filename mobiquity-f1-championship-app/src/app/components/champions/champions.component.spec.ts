@@ -17,7 +17,6 @@ describe('ChampionsComponent', () => {
         HttpClientModule,
         BrowserAnimationsModule
       ]
-
     })
     .compileComponents().then(() => {
         fixture = TestBed.createComponent(ChampionsComponent);
@@ -33,7 +32,10 @@ describe('ChampionsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('it should get all champions', () => {
-    //expect(component).toBeTruthy();
+/*  it('it should get all champions', () => {
+    expect(component.worldChampions.MRData.StandingsTable.StandingsLists.length > 0).toBeTruthy();
   });
+  it('it should get all winners', () => {
+    expect(component.winnersOfTheYear.MRData.RaceTable.Races.length > 0).toBeTruthy();
+  });*/
 });
